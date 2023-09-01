@@ -1,0 +1,5 @@
+
+      <app-upload (valueChange)="upload($event)"></app-upload>
+      <div class="progres" [style.display]="loading">
+        <mat-progress-bar mode="indeterminate" [value]="valueProgress"></mat-progress-bar>
+      </div>

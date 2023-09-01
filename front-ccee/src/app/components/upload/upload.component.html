@@ -1,0 +1,17 @@
+<mat-form-field>
+  <div>
+    <mat-toolbar>
+      <input matInput readonly name="name" />
+      <button mat-flat-button color="primary">Upload</button>
+    </mat-toolbar>
+    <input
+      type="file"
+      #fileInput
+      id="uploadFile"
+      (change)="onValueChange($event)"
+      name="uploadFile"
+      multiple="multiple"
+      accept=".xml"
+    />
+  </div>
+</mat-form-field>
