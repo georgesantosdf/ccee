@@ -17,5 +17,5 @@ public class Purchase {
 	
 	@ElementCollection
 	@CollectionTable(name="purchase_value")
-	private List<BigDecimal> purchase_value;
+	private List<BigDecimal> purchaseValue;
 }

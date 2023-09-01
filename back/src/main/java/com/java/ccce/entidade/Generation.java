@@ -16,6 +16,6 @@ public class Generation {
 	private Long id;
 
 	@ElementCollection
-	@CollectionTable(name="value_generation")
-	private List<BigDecimal> value_generation;
+	@CollectionTable(name="generation_value")
+	private List<BigDecimal> generationValue;
 }
