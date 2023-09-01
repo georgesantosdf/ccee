@@ -27,6 +27,7 @@ public class AgentController {
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<?> save(@RequestBody AgentDTO agentDTO) {
+        System.out.println("Código do Agente: "+agentDTO.getCode());
         if (Objects.nonNull(agentService.save(mapper.map(agentDTO, Agent.class)))) {
             return ResponseEntity.status(HttpStatus.OK).build();
         }
