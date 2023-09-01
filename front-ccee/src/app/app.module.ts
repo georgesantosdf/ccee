@@ -20,13 +20,17 @@ import { UploadComponent } from './components/upload/upload.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
+import { UploadListComponent } from './pages/upload-list/upload-list.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     uploadFormComponent,
-    UploadComponent
+    UploadComponent,
+    UploadListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

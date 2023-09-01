@@ -61,7 +61,7 @@ export class uploadFormComponent {
         this.progress(obj.size, i++)
         this.post(agente);
       }
-      alert("Processamento terminado");
+      alert("Arquivos Enviado com Sucesso");
       this.valueProgress = 0;
       this.loading = 'none';
  }

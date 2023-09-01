@@ -1,13 +1,12 @@
-<mat-toolbar [color]="'primary'">
-  <h1 class="h1">Desafio FullStack Java/Angular CCEE</h1>
-  
-<ng-content></ng-content>
-<div>
+<app-header >
   <mat-card>
     <mat-card-content>
       <app-upload-form></app-upload-form>
     </mat-card-content>
   </mat-card>
-</div>
- 
-</mat-toolbar>
+  <mat-card>
+    <mat-card-content>
+      <app-upload-list></app-upload-list>
+    </mat-card-content>
+  </mat-card>
+</app-header>
